@@ -32,7 +32,7 @@ Route::middleware(['auth'])->group(function() {
     });
 
     Route::prefix('student')->middleware('student')->group(function () {
-        Route::resource('subjects', StudentSubjectController::class)->except(['edit', 'update']);
+        Route::resource('subjects', StudentSubjectController::class, ['as' => 'student'])->except(['edit', 'update']);
         Route::get('tasks/{task}', [StudentTaskController::class, 'show'])->name('student.tasks.show');
         Route::post('tasks/{task}/submit', [StudentTaskController::class, 'store'])->name('student.tasks.submit');
     });
