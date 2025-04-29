@@ -44,6 +44,20 @@ class LmsSeeder extends Seeder
             'code' => 'IP-18fKPROGEG',
             'credit' => 3,
         ]);
+
+        $student1 = User::factory()->create([
+            'name' => 'Alfarizy Alfarizy',
+            'email' => 'thuayp@inf.elte.hu',
+            'password' => bcrypt('password'),
+            'role' => 'student'
+        ]);
+
+        $student2 = User::factory()->create([
+            'name' => 'Alfarizy Alfarizy',
+            'email' => 'rizy.izy15@gmail.com',
+            'password' => bcrypt('password'),
+            'role' => 'student'
+        ]);
     
         Task::create([
             'subject_id' => $subject1->id,
