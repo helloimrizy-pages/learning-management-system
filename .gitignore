@@ -22,3 +22,4 @@ yarn-error.log
 /.vscode
 /.zed
 export_code.sh
+code_context.txt

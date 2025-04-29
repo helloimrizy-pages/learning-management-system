@@ -5,9 +5,12 @@ namespace App\Http\Controllers\Teacher;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Subject;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class SubjectController extends Controller
 {
+    use AuthorizesRequests;
+    
     /**
      * Display a listing of the resource.
      */
