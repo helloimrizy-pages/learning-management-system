@@ -21,7 +21,8 @@ class SubjectPolicy
      */
     public function view(User $user, Subject $subject): bool
     {
-        return false;
+        // Allow if the user teaches this subject
+        return $user->subjectsTaught()->where('id', $subject->id)->exists();
     }
 
     /**
@@ -29,7 +30,7 @@ class SubjectPolicy
      */
     public function create(User $user): bool
     {
-        return false;
+        return $user->role === 'teacher';
     }
 
     /**
@@ -37,7 +38,7 @@ class SubjectPolicy
      */
     public function update(User $user, Subject $subject): bool
     {
-        return false;
+        return $user->subjectsTaught()->where('id', $subject->id)->exists();
     }
 
     /**
@@ -45,7 +46,7 @@ class SubjectPolicy
      */
     public function delete(User $user, Subject $subject): bool
     {
-        return false;
+        return $user->subjectsTaught()->where('id', $subject->id)->exists();
     }
 
     /**
