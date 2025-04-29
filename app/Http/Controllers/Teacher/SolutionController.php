@@ -19,7 +19,7 @@ class SolutionController extends Controller
         $maxPoints = $solution->task->points;
 
         $validated = $request->validate([
-            'points_awarded' => "required|integer|min:0|max:$maxPoints",
+            'points_obtained' => "required|integer|min:0|max:$maxPoints",
         ]);
 
         $solution->update($validated);
