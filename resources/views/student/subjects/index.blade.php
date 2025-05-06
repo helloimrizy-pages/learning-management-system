@@ -24,7 +24,7 @@
                                         <h3 class="text-lg font-semibold text-gray-900 mb-1 truncate">
                                             {{ $subject->name }}
                                         </h3>
-                                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                                        <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full flex text-center items-center">
                                             {{ $subject->credit }} credit{{ $subject->credit !== 1 ? 's' : '' }}
                                         </span>
                                     </div>
