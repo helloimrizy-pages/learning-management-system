@@ -107,9 +107,9 @@
                         
                         <div class="mt-8 pt-6 border-t border-gray-200">
                             <div class="flex items-center justify-center">
-                                <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/327146720_1336657187132779_8439983604260890013_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=beZORZWQAb0Q7kNvwFJIC71&_nc_oc=AdmWkVjtLmenqUcYgseT0Dp5tI2xWHBWqHPJ63lXDe67zb0aBSb23W7lg8a8wNR5Lqm6NHnoUqv64sjn5-aNbbBt&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=I2XrzAY6M28uhjV9hM7F6A&oh=00_AfEsUU1gAb9wkYoKEDxmMkhZSJnkoZ2XDOUWWhjFn_OOFQ&oe=6816C35A" 
-                                     alt="ELTE University Logo" 
-                                     class="h-24 opacity-80">
+                                <img src="{{ asset('elte_logo.png') }}" 
+                                    alt="ELTE University Logo" 
+                                    class="h-24 opacity-80">
                             </div>
                             <div class="mt-4 text-center text-sm text-gray-500">
                                 <p>Faculty of Informatics</p>
