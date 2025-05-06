@@ -58,7 +58,7 @@
                                             {{ $subject->students->count() }}
                                         </div>
                                     </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                    <td class="py-4 whitespace-nowrap text-right text-sm font-medium">
                                         <div class="flex justify-end space-x-2">
                                             <a href="{{ route('subjects.show', $subject) }}" class="text-primary-600 hover:text-primary-800 px-2 py-1 rounded hover:bg-gray-100 transition">
                                                 View
