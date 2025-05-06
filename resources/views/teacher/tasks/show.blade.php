@@ -270,20 +270,17 @@
         modal.classList.add('hidden');
     }
     
-    // Close modal when clicking outside of it
     window.addEventListener('click', function(event) {
         const modal = document.getElementById('solution-modal');
         if (event.target === modal) {
             closeSolutionModal();
         }
     });
-    
-    // Prevent closing when clicking inside the modal
+
     document.querySelector('#solution-modal > div').addEventListener('click', function(event) {
         event.stopPropagation();
     });
     
-    // Close modal with Escape key
     window.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             closeSolutionModal();

@@ -221,26 +221,21 @@
 
 <script>
     function showTab(tabName) {
-        // Hide all tab contents
         document.querySelectorAll('.tab-content').forEach(tab => {
             tab.classList.add('hidden');
         });
-        
-        // Show the selected tab content
+
         document.getElementById(tabName + '-tab').classList.remove('hidden');
         
-        // Update active state for tab buttons
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.classList.remove('bg-gray-100', 'text-gray-900', 'active-tab');
             btn.classList.add('text-gray-500', 'hover:text-gray-700', 'hover:bg-gray-50');
         });
         
-        // Set the clicked button as active
         event.currentTarget.classList.add('bg-gray-100', 'text-gray-900', 'active-tab');
         event.currentTarget.classList.remove('text-gray-500', 'hover:text-gray-700', 'hover:bg-gray-50');
     }
 
-    // Check for hash in URL
     window.addEventListener('load', function() {
         const hash = window.location.hash.substring(1);
         if (hash === 'students') {
