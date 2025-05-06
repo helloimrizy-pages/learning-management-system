@@ -60,7 +60,7 @@
                                 <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                             @enderror
                             <p class="mt-2 text-xs text-gray-500">
-                                Provide clear instructions for students. You can use basic formatting like lists, bold, italics, etc.
+                                Provide clear instructions for students.
                             </p>
                         </div>
                     </div>
