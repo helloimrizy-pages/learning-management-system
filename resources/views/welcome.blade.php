@@ -158,10 +158,10 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                                             </svg>
                                         </div>
-                                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Progress Tracking</p>
+                                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Task Management</p>
                                     </dt>
                                     <dd class="mt-2 ml-16 text-base text-gray-500">
-                                        Track student progress and performance with detailed analytics and reporting tools.
+                                    Create and post assignments that are visible to students enrolled in the course with an easy-to-use user experience.
                                     </dd>
                                 </div>
 
